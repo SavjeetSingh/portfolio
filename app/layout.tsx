@@ -13,8 +13,8 @@ const pixelifySans = Pixelify_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Savjeet Singh",
-  description: "Full Stack Developer Portfolio",
+  title: "Vineet Prabhakar",
+  description: "Game Designer & QA Portfolio",
 };
 
 export default function RootLayout({
