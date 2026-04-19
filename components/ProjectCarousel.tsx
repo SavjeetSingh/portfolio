@@ -498,7 +498,7 @@ function ProjectCard({ project, position, onClick, cardW, isMobile }: CardProps)
 }
 
 export default function ProjectCarousel() {
-  const [mode, setMode] = useState<"2D" | "3D">("2D");
+  const [mode, setMode] = useState<"2D" | "3D">("3D");
   const [active, setActive] = useState(0);
   const [cardW, setCardW] = useState(600);
   const touchStartX = useRef(0);
