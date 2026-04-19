@@ -84,10 +84,10 @@ export default function Contact() {
     setError(null);
     try {
       await emailjs.send(
-        "service_40yh0af",
-        "template_dzff13t",
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
         { from_name: formState.name, from_email: formState.email, message: formState.message },
-        { publicKey: "4EC943YR1gvQRkHjp" }
+        { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY! }
       );
       setSent(true);
     } catch {
