@@ -105,16 +105,6 @@ export default function Hero() {
         />
       </div>
 
-      <div
-        style={{ color: "var(--text-muted)" }}
-        className="absolute bottom-8 left-1/2 sm:left-1/4 -translate-x-1/2 flex flex-col items-center gap-2"
-      >
-        <span className="text-xs tracking-widest">scroll</span>
-        <div
-          style={{ background: "var(--text-muted)" }}
-          className="w-px h-8 animate-pulse"
-        />
-      </div>
     </section>
   );
 }

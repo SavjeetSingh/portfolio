@@ -5,7 +5,6 @@ import Navbar from "@/components/Navbar";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import ProjectCarousel from "@/components/ProjectCarousel";
-import ProjectCarousel2 from "@/components/ProjectCarousel";
 import Contact from "@/components/Contact";
 
 export default function Home() {
