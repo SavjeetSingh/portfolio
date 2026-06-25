@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 
 const EXPERIENCES = [
   {
-    role: "Game Designer / QA",
+    role: "Game Designer",
     company: "Ravant Media",
     type: "Full-time",
     period: "AUG 2025 - APR 2026",
@@ -23,7 +23,7 @@ const EXPERIENCES = [
     period: "FEB 2025 – JUN 2025",
     location: "Noida",
     description: [
-      "Developed a multi-game mobile app in Unity featuring both 2D and 3D games within a unified interface.",
+      "Designed a multi-game mobile app in Unity featuring both 2D and 3D games within a unified interface.",
       "Designed GDDs and validated UI/UX flows to ensure smooth and intuitive gameplay experience.",
       "Identified and fixed bugs across devices, improving overall performance and usability.",
       "Localized the app into 11 Indian languages and performed functional + linguistic testing.",
