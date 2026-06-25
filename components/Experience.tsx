@@ -17,7 +17,7 @@ const EXPERIENCES = [
     tech: [],
   },
   {
-    role: "Unity3D Developer Intern",
+    role: "Game Designer Intern",
     company: "Pythrust Technologies",
     type: "Intern",
     period: "FEB 2025 – JUN 2025",
