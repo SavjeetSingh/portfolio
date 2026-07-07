@@ -14,7 +14,7 @@ export default function SmoothScroll() {
       const target = (e.target as HTMLElement).closest("a");
       if (!target) return;
       const href = target.getAttribute("href");
-      if (!href?.startsWith("#")) return;
+      if (!href || href.length < 2 || !href.startsWith("#")) return;
       const el = document.querySelector(href);
       if (!el) return;
       e.preventDefault();

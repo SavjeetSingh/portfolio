@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import ProjectCarousel from "@/components/ProjectCarousel";
+import ProcessBanner from "@/components/ProcessBanner";
 import Contact from "@/components/Contact";
 
 export default function Home() {
@@ -50,6 +51,7 @@ export default function Home() {
       <Skills />
       <Experience />
       <ProjectCarousel />
+      <ProcessBanner />
 
       <Contact />
     </>
