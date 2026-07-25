@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Pixelify_Sans } from "next/font/google";
 import "./globals.css";
 import SmoothScroll from "@/components/SmoothScroll";
-import PixelCursor from "@/components/PixelCursor";
 import ClickSound from "@/components/ClickSound";
 import ClickParticles from "@/components/ClickParticles";
 
@@ -34,7 +33,6 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col">
         <SmoothScroll />
-        <PixelCursor />
         <ClickSound />
         <ClickParticles />
         {children}
