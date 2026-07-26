@@ -1,12 +1,38 @@
 "use client";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 const NOTION_URL =
   "https://impartial-cost-03a.notion.site/Know-The-Process-8087375a73c2821fa1670141280917d4";
 const NOTION_EMBED_URL =
   "https://impartial-cost-03a.notion.site/ebd//8087375a73c2821fa1670141280917d4";
 
+const MOBILE_QUERY = "(max-width: 767px)";
+
 export default function ProcessPage() {
+  const [isMobile, setIsMobile] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    const mql = window.matchMedia(MOBILE_QUERY);
+    setIsMobile(mql.matches);
+    if (mql.matches) {
+      window.location.replace(NOTION_URL);
+    }
+  }, []);
+
+  if (isMobile === null || isMobile) {
+    return (
+      <main
+        style={{ background: "var(--bg)", fontFamily: "inherit" }}
+        className="h-dvh flex items-center justify-center"
+      >
+        <p style={{ color: "var(--text-muted)" }} className="text-sm">
+          Redirecting to Notion…
+        </p>
+      </main>
+    );
+  }
+
   return (
     <main
       style={{
