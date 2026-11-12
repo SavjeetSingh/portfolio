@@ -3,10 +3,24 @@ import { useEffect, useRef, useState } from "react";
 
 const EXPERIENCES = [
   {
+    role: "Game Designer 2",
+    company: "Capsitech",
+    type: "Full-time",
+    period: "AUG 2026 – PRESENT",
+    location: "Jodhpur",
+    description: [
+      "Designed and iterated hyper-casual game concepts, core gameplay loops, mechanics, and progression systems with a focus on intuitive controls and short-session engagement.",
+      "Created and maintained GDDs, level design documentation, and feature requirements to support development.",
+      "Designed and balanced levels, difficulty curves, challenges, and reward systems using playtesting and player feedback to improve gameplay experience and retention.",
+      "Collaborated with developers, artists, and QA teams to prototype, test, and refine gameplay features, UI/UX flows, and game mechanics through rapid iteration cycles.",
+    ],
+    tech: [],
+  },
+  {
     role: "Game Designer",
     company: "Ravant Media",
     type: "Full-time",
-    period: "AUG 2025 - APR 2026",
+    period: "AUG 2025 - JUL 2026",
     location: "Remote",
     description: [
       "Analyzed gameplay mechanics, level difficulty, and player engagement to suggest design improvements.",
@@ -271,7 +285,7 @@ export default function Experience() {
                   <div
                     style={{
                       overflow: "hidden",
-                      maxHeight: isOpen ? "400px" : "0px",
+                      maxHeight: isOpen ? "600px" : "0px",
                       transition: "max-height 0.4s cubic-bezier(0.4,0,0.2,1)",
                       marginLeft: "40px",
                     }}
